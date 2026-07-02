@@ -540,10 +540,7 @@ function setupBottleScene() {
   floor.position.y = -2.38;
   scene.add(floor);
 
-  let isDragging = false;
-  let lastX = 0;
-  let dragVelocity = 0;
-  let targetRotation = -0.22;
+  let targetRotation = -0.16;
 
   function resize() {
     const rect = canvas.getBoundingClientRect();
@@ -555,58 +552,21 @@ function setupBottleScene() {
 
     const mobile = width < 680;
     bottle.scale.setScalar(mobile ? 0.62 : 0.92);
-    bottle.userData.baseY = mobile ? 0.82 : 0.02;
-    bottle.position.set(mobile ? -0.72 : 1.62, bottle.userData.baseY, 0);
-    camera.position.z = mobile ? 8.6 : 7.45;
+    bottle.userData.baseY = mobile ? 0.7 : 0.02;
+    bottle.position.set(mobile ? 0.18 : 1.62, bottle.userData.baseY, 0);
+    camera.position.z = mobile ? 8.65 : 7.45;
   }
 
   const observer = new ResizeObserver(resize);
   observer.observe(canvas);
   resize();
 
-  function preventCanvasGesture(event) {
-    if (event.cancelable) {
-      event.preventDefault();
-    }
-  }
-
-  canvas.addEventListener("pointerdown", (event) => {
-    preventCanvasGesture(event);
-    isDragging = true;
-    lastX = event.clientX;
-    dragVelocity = 0;
-    canvas.setPointerCapture?.(event.pointerId);
-  }, { passive: false });
-
-  canvas.addEventListener("pointermove", (event) => {
-    if (!isDragging) return;
-    preventCanvasGesture(event);
-    const dx = event.clientX - lastX;
-    lastX = event.clientX;
-    dragVelocity = dx * 0.012;
-    targetRotation += dragVelocity;
-  }, { passive: false });
-
-  function stopDrag(event) {
-    isDragging = false;
-    canvas.releasePointerCapture?.(event.pointerId);
-  }
-
-  canvas.addEventListener("pointerup", stopDrag);
-  canvas.addEventListener("pointercancel", stopDrag);
-  canvas.addEventListener("pointerleave", () => {
-    isDragging = false;
-  });
-
   let lastTime = performance.now();
   function animate(now) {
     const delta = Math.min(48, now - lastTime);
     lastTime = now;
 
-    if (!isDragging) {
-      targetRotation += 0.00028 * delta + dragVelocity * 0.94;
-      dragVelocity *= 0.92;
-    }
+    targetRotation += 0.0002 * delta;
 
     bottle.rotation.y += (targetRotation - bottle.rotation.y) * 0.08;
     bottle.rotation.x = Math.sin(now * 0.0008) * 0.028;
