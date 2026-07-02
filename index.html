@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Діамантова вода: доставка бутильованої води 18,9 л по Софіївській Борщагівці та в радіусі 10 км. Замовлення телефоном або в Telegram."
+    />
+    <meta name="theme-color" content="#f8fdff" />
+    <title>Діамантова вода | Доставка води Софіївська Борщагівка</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="./styles.css?v=20260703-hero-split" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script type="module" src="./main.js?v=20260703-hero-split"></script>
+  </head>
+  <body>
+    <div class="site-shell" data-view="home">
+      <header class="topbar" aria-label="Головна навігація">
+        <a class="brand" href="#home" aria-label="Діамантова вода">
+          <img class="brand-logo" src="./assets/diamond-water-logo.svg" alt="Diamond Water" />
+          <small>Софіївська Борщагівка</small>
+        </a>
+        <nav class="top-actions" aria-label="Контакти">
+          <a class="icon-action" href="tel:+380981259990" aria-label="Подзвонити">
+            <i data-lucide="phone"></i>
+          </a>
+          <a class="icon-action telegram-action" href="https://t.me/DDvoda" target="_blank" rel="noopener" aria-label="Telegram">
+            <i data-lucide="send"></i>
+          </a>
+        </nav>
+      </header>
+
+      <main id="home-view" class="view view-home" aria-labelledby="hero-title">
+        <section class="hero section-panel" id="home">
+          <canvas id="bottle-canvas" class="bottle-canvas" aria-label="3D візуал бутля Діамантова вода" tabindex="-1"></canvas>
+          <div class="hero-water" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="hero-product-panel" aria-hidden="true"></div>
+          <div class="hero-content">
+            <div class="hero-copy">
+              <div class="service-chip">
+                <i data-lucide="map-pin"></i>
+                <span>Молодіжна 5 · +10 км</span>
+              </div>
+              <h1 id="hero-title">Діамантова вода</h1>
+              <p class="hero-lead">
+                Питна вода 18,9 л за <strong>100 грн</strong>. До 15:00 — привеземо сьогодні.
+              </p>
+              <div class="hero-badges" aria-label="Основні умови">
+                <span>18,9 л</span>
+                <span>100 грн</span>
+                <span>+10 км</span>
+              </div>
+            </div>
+            <div class="hero-actions">
+              <div class="hero-cta-row">
+                <a class="btn btn-primary" href="https://t.me/DDvoda" target="_blank" rel="noopener">
+                  <i data-lucide="send"></i>
+                  Замовити в Telegram
+                </a>
+                <a class="btn btn-ghost" href="tel:+380981259990">
+                  <i data-lucide="phone-call"></i>
+                  098 125 99 90
+                </a>
+              </div>
+              <div class="hero-trust" aria-label="Переваги">
+                <span><i data-lucide="truck"></i> Безкоштовна доставка</span>
+                <span><i data-lucide="clock-3"></i> День у день</span>
+                <span><i data-lucide="flask-conical"></i> Лабораторний контроль</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="order-strip section-panel" aria-label="Швидке замовлення">
+          <div>
+            <span class="eyebrow">Перший вибір</span>
+            <h2>18,9 л чистої води для дому та офісу</h2>
+          </div>
+          <div class="price-lockup">
+            <strong>100</strong>
+            <span>грн / бутель</span>
+          </div>
+        </section>
+
+        <section class="benefits section-panel" id="benefits">
+          <div class="section-heading">
+            <span class="eyebrow">Переваги</span>
+            <h2>Сервіс, який не треба контролювати</h2>
+          </div>
+          <div class="benefit-grid">
+            <article>
+              <i data-lucide="badge-check"></i>
+              <h3>Преміум сервіс</h3>
+              <p>Приймаємо замовлення телефоном і в Telegram, швидко підтверджуємо деталі та час доставки.</p>
+            </article>
+            <article>
+              <i data-lucide="shield-check"></i>
+              <h3>Якість і надійність</h3>
+              <p>Вода проходить очищення та контроль показників. Аналізи й документи можна додати в розділ ліцензій.</p>
+            </article>
+            <article>
+              <i data-lucide="zap"></i>
+              <h3>Працюємо при відключеннях</h3>
+              <p>Плануємо маршрути так, щоб доставка не залежала від побутових незручностей району.</p>
+            </article>
+            <article>
+              <i data-lucide="badge-dollar-sign"></i>
+              <h3>Гарантія спокою</h3>
+              <p>Не сподобається вода або сервіс — повернемо кошти після звернення в день отримання.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="flow section-panel" id="delivery">
+          <div class="section-heading">
+            <span class="eyebrow">Доставка</span>
+            <h2>Як це працює</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <span>1</span>
+              <h3>Пишете або дзвоните</h3>
+              <p>Telegram <a href="https://t.me/DDvoda" target="_blank" rel="noopener">@DDvoda</a> або номер <a href="tel:+380981259990">098 125 99 90</a>.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Узгоджуємо замовлення</h3>
+              <p>Кількість бутлів, адресу, оплату та зручний час. Працюємо з 09:00 до 19:00.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Привозимо воду</h3>
+              <p>До 15:00 — день у день. Після 15:00 — наступного робочого дня.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="quality section-panel" id="quality">
+          <div class="quality-copy">
+            <span class="eyebrow">Якість</span>
+            <h2>Очищення, контроль, документи</h2>
+            <p>
+              Для сторінки закладено блок під лабораторні дослідження, сертифікати та документи системи безпечності
+              харчових продуктів. Після отримання файлів додамо точні назви, дати, номери протоколів і посилання.
+            </p>
+          </div>
+          <div class="quality-list" aria-label="Контроль якості">
+            <div><i data-lucide="filter"></i><span>Багаторівнева фільтрація</span></div>
+            <div><i data-lucide="droplets"></i><span>Очищення без зайвих домішок</span></div>
+            <div><i data-lucide="microscope"></i><span>Лабораторні дослідження</span></div>
+            <div><i data-lucide="file-check-2"></i><span>Місце для ISO / HACCP</span></div>
+          </div>
+        </section>
+
+        <section class="coverage section-panel" id="coverage">
+          <div class="section-heading">
+            <span class="eyebrow">Зона доставки</span>
+            <h2>Софіївська Борщагівка<br />+10 км</h2>
+          </div>
+          <div class="coverage-map">
+            <div class="map-live-card" aria-label="Карта локації Діамантова вода">
+              <iframe
+                title="Карта: Молодіжна 5, Софіївська Борщагівка"
+                src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B0%205%2C%20%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D1%96%D0%B2%D0%BA%D0%B0&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="map-sheen" aria-hidden="true"></div>
+              <div class="map-radius" aria-hidden="true"></div>
+              <div class="map-pin-card">
+                <span><i data-lucide="map-pin"></i></span>
+                <strong>Молодіжна, 5</strong>
+                <small>центр доставки</small>
+              </div>
+              <div class="map-zone-chip zone-main">Софіївська Борщагівка</div>
+              <div class="map-zone-chip zone-radius">+10 км</div>
+              <div class="map-zone-chip zone-fast">день у день</div>
+            </div>
+            <div class="map-copy">
+              <h3>Де ми знаходимось</h3>
+              <p>Київська область, Софіївська Борщагівка, вул. Молодіжна, 5</p>
+              <ul class="map-facts">
+                <li><i data-lucide="route"></i> Софіївська Борщагівка та найближчі ЖК</li>
+                <li><i data-lucide="circle-dot"></i> Додатковий радіус доставки 10 км</li>
+                <li><i data-lucide="clock-3"></i> До 15:00 — доставка день у день</li>
+              </ul>
+              <a
+                class="btn btn-map"
+                href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B0%205%20%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D1%96%D0%B2%D0%BA%D0%B0"
+                target="_blank"
+                rel="noopener"
+              >
+                <i data-lucide="navigation"></i>
+                Відкрити Google Maps
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta section-panel">
+          <span class="eyebrow">Замовити</span>
+          <h2>Замовляйте воду<br />без зайвих дзвінків</h2>
+          <p>Напишіть у Telegram або натисніть на номер. Ми підтвердимо замовлення і привеземо воду.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="https://t.me/DDvoda" target="_blank" rel="noopener">
+              <i data-lucide="send"></i>
+              Telegram @DDvoda
+            </a>
+            <a class="btn btn-ghost" href="tel:+380981259990">
+              <i data-lucide="phone"></i>
+              Подзвонити
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <main id="legal-view" class="view view-legal" aria-live="polite">
+        <button class="back-button" type="button" data-back>
+          <i data-lucide="arrow-left"></i>
+          Назад
+        </button>
+        <article class="legal-page" data-legal-page="privacy">
+          <p class="eyebrow">Документи</p>
+          <h1>Політика конфіденційності</h1>
+          <p>
+            Ця політика описує, як сайт "Діамантова вода" обробляє персональні дані клієнтів під час звернення,
+            замовлення доставки, телефонного дзвінка або переходу в Telegram.
+          </p>
+          <h2>Які дані можуть оброблятися</h2>
+          <p>
+            Ім'я, номер телефону, Telegram-нік, адреса доставки, кількість бутлів, побажання щодо часу доставки,
+            історія звернень та технічні дані роботи сайту.
+          </p>
+          <h2>Мета обробки</h2>
+          <p>
+            Прийом і виконання замовлень, зв'язок із клієнтом, організація доставки, оплата, гарантійні звернення,
+            поліпшення сервісу та виконання вимог законодавства України.
+          </p>
+          <h2>Передача даних</h2>
+          <p>
+            Дані можуть передаватися службам зв'язку, платіжним сервісам, бухгалтерським або юридичним підрядникам
+            тільки в обсязі, потрібному для виконання замовлення та обов'язків продавця.
+          </p>
+          <h2>Права клієнта</h2>
+          <p>
+            Клієнт може звернутися щодо доступу, уточнення або видалення своїх даних, якщо інше не вимагається
+            законом. Контакт для звернення: Telegram @DDvoda або телефон 098 125 99 90.
+          </p>
+          <h2>Дані продавця</h2>
+          <p class="placeholder-note">
+            Після отримання реквізитів потрібно додати: повну назву ФОП/ТОВ, ЄДРПОУ/РНОКПП, юридичну адресу,
+            email, відповідальну особу.
+          </p>
+        </article>
+
+        <article class="legal-page" data-legal-page="terms">
+          <p class="eyebrow">Документи</p>
+          <h1>Правила користування сайтом</h1>
+          <p>
+            Сайт призначений для ознайомлення з послугою доставки води "Діамантова вода" та швидкого зв'язку з
+            оператором через телефон або Telegram.
+          </p>
+          <h2>Користування сайтом</h2>
+          <p>
+            Користувач зобов'язується надавати достовірну контактну інформацію для підтвердження замовлення.
+            Натискання кнопок дзвінка або Telegram переводить користувача до відповідного сервісу зв'язку.
+          </p>
+          <h2>Інформація на сайті</h2>
+          <p>
+            Ціни, зона доставки та умови можуть уточнюватися оператором під час підтвердження замовлення. Поточна
+            базова ціна: 100 грн за бутель 18,9 л.
+          </p>
+          <h2>Гарантія</h2>
+          <p>
+            Якщо клієнт незадоволений якістю води або сервісу, він може звернутися в день отримання замовлення.
+            Повернення коштів або заміна узгоджуються після перевірки звернення.
+          </p>
+        </article>
+
+        <article class="legal-page" data-legal-page="contract">
+          <p class="eyebrow">Документи</p>
+          <h1>Публічний договір поставки</h1>
+          <p>
+            Цей шаблон публічного договору визначає базові умови поставки бутильованої води "Діамантова вода" для
+            фізичних та юридичних осіб.
+          </p>
+          <h2>Предмет договору</h2>
+          <p>
+            Продавець постачає клієнту бутильовану воду 18,9 л та, за домовленістю, супутні товари або обладнання.
+            Клієнт приймає товар і оплачує його погодженим способом.
+          </p>
+          <h2>Оформлення замовлення</h2>
+          <p>
+            Замовлення оформлюється телефоном або через Telegram. Замовлення, зроблені до 15:00 у робочий час,
+            можуть доставлятися день у день; після 15:00 — наступного робочого дня.
+          </p>
+          <h2>Оплата</h2>
+          <p>
+            Доступні способи: готівка, переказ на картку, безготівковий розрахунок для бізнесу та термінал за
+            наявності технічної можливості.
+          </p>
+          <h2>Тара</h2>
+          <p class="placeholder-note">
+            Умови застави, повернення або обміну тари потрібно додати після підтвердження бізнес-правил.
+          </p>
+          <h2>Реквізити продавця</h2>
+          <p class="placeholder-note">
+            Потрібно додати юридичну назву, код, адресу, банківські реквізити, email та контакт відповідальної особи.
+          </p>
+        </article>
+
+        <article class="legal-page" data-legal-page="licenses">
+          <p class="eyebrow">Документи</p>
+          <h1>Ліцензії, сертифікати та аналізи</h1>
+          <p>
+            Тут буде розміщено підтвердження якості води: лабораторні аналізи, протоколи досліджень, сертифікати,
+            документи щодо системи безпечності харчових продуктів та інші матеріали.
+          </p>
+          <div class="document-slots">
+            <div>
+              <i data-lucide="file-text"></i>
+              <h2>Протоколи аналізів</h2>
+              <p>Додати PDF або фото з датою, лабораторією, показниками та номером протоколу.</p>
+            </div>
+            <div>
+              <i data-lucide="award"></i>
+              <h2>ISO / HACCP</h2>
+              <p>Додати документ, якщо сертифікація чинна. Без документа на сайті не заявляємо номер сертифіката.</p>
+            </div>
+            <div>
+              <i data-lucide="shield"></i>
+              <h2>Походження води</h2>
+              <p>Додати підтверджену інформацію про джерело, технологію очищення та виробника.</p>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Діамантова вода</strong>
+          <p>вул. Молодіжна, 5, Софіївська Борщагівка</p>
+        </div>
+        <nav aria-label="Юридичні документи">
+          <a href="#privacy">Політика</a>
+          <a href="#terms">Правила</a>
+          <a href="#contract">Договір</a>
+          <a href="#licenses">Ліцензії</a>
+        </nav>
+      </footer>
+
+      <div class="sticky-contact" aria-label="Швидкий зв'язок">
+        <a href="tel:+380981259990">
+          <i data-lucide="phone"></i>
+          <span>Дзвінок</span>
+        </a>
+        <a href="https://t.me/DDvoda" target="_blank" rel="noopener">
+          <i data-lucide="send"></i>
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
