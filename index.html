@@ -9,10 +9,11 @@
     />
     <meta name="theme-color" content="#f8fdff" />
     <title>Діамантова вода | Доставка води Софіївська Борщагівка</title>
+    <link rel="icon" href="./assets/diamond-water-logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="stylesheet" href="./styles.css?v=20260703-hero-split" />
+    <link rel="stylesheet" href="./styles.css?v=20260703-no-map" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-    <script type="module" src="./main.js?v=20260703-hero-split"></script>
+    <script type="module" src="./main.js?v=20260703-no-map"></script>
   </head>
   <body>
     <div class="site-shell" data-view="home">
@@ -21,6 +22,7 @@
           <img class="brand-logo" src="./assets/diamond-water-logo.svg" alt="Diamond Water" />
           <small>Софіївська Борщагівка</small>
         </a>
+        <p class="top-slogan">Цінуй здоров'я - обирай якісну воду!</p>
         <nav class="top-actions" aria-label="Контакти">
           <a class="icon-action" href="tel:+380981259990" aria-label="Подзвонити">
             <i data-lucide="phone"></i>
@@ -44,16 +46,16 @@
             <div class="hero-copy">
               <div class="service-chip">
                 <i data-lucide="map-pin"></i>
-                <span>Молодіжна 5 · +10 км</span>
+                <span>Софіївська Борщагівка, вул. Молодіжна, 5</span>
               </div>
               <h1 id="hero-title">Діамантова вода</h1>
               <p class="hero-lead">
-                Питна вода 18,9 л за <strong>100 грн</strong>. До 15:00 — привеземо сьогодні.
+                Питна вода 18,9 л за <strong>100 грн</strong>. Для офісу та дому.
               </p>
               <div class="hero-badges" aria-label="Основні умови">
                 <span>18,9 л</span>
                 <span>100 грн</span>
-                <span>+10 км</span>
+                <span>Доставка до дверей</span>
               </div>
             </div>
             <div class="hero-actions">
@@ -79,7 +81,7 @@
         <section class="order-strip section-panel" aria-label="Швидке замовлення">
           <div>
             <span class="eyebrow">Перший вибір</span>
-            <h2>18,9 л чистої води для дому та офісу</h2>
+            <h2>18,9 л питної води для тебе</h2>
           </div>
           <div class="price-lockup">
             <strong>100</strong>
@@ -101,12 +103,15 @@
             <article>
               <i data-lucide="shield-check"></i>
               <h3>Якість і надійність</h3>
-              <p>Вода проходить очищення та контроль показників. Аналізи й документи можна додати в розділ ліцензій.</p>
+              <p>
+                Вода проходить 9 етапів очищення та фільтрації, іонізацію та збагачення мінералами. Здійснюється
+                контроль показників і регулярні аналізи води. Маємо повний пакет документів. Стандарт безпеки ISO 22000.
+              </p>
             </article>
             <article>
               <i data-lucide="zap"></i>
               <h3>Працюємо при відключеннях</h3>
-              <p>Плануємо маршрути так, щоб доставка не залежала від побутових незручностей району.</p>
+              <p>Працюємо навіть при відключенні світла. Доставляємо до дверей.</p>
             </article>
             <article>
               <i data-lucide="badge-dollar-sign"></i>
@@ -135,70 +140,65 @@
             <article>
               <span>3</span>
               <h3>Привозимо воду</h3>
-              <p>До 15:00 — день у день. Після 15:00 — наступного робочого дня.</p>
+              <p>
+                Якщо замовлення оформлено до 15:00 — привеземо день у день. Якщо після 15:00 — доставимо наступного дня.
+              </p>
             </article>
           </div>
         </section>
 
-        <section class="quality section-panel" id="quality">
-          <div class="quality-copy">
-            <span class="eyebrow">Якість</span>
-            <h2>Очищення, контроль, документи</h2>
-            <p>
-              Для сторінки закладено блок під лабораторні дослідження, сертифікати та документи системи безпечності
-              харчових продуктів. Після отримання файлів додамо точні назви, дати, номери протоколів і посилання.
-            </p>
-          </div>
-          <div class="quality-list" aria-label="Контроль якості">
-            <div><i data-lucide="filter"></i><span>Багаторівнева фільтрація</span></div>
-            <div><i data-lucide="droplets"></i><span>Очищення без зайвих домішок</span></div>
-            <div><i data-lucide="microscope"></i><span>Лабораторні дослідження</span></div>
-            <div><i data-lucide="file-check-2"></i><span>Місце для ISO / HACCP</span></div>
+        <section class="service-hours section-panel" id="service">
+          <span class="eyebrow">Сервіс</span>
+          <h2>
+            <span>Працюємо з ПН по СБ</span>
+            <span>Робочі години <b>9:00-19:00</b></span>
+            <span>Цінуємо кожного клієнта</span>
+          </h2>
+          <div class="service-hours-grid" aria-label="Умови сервісу">
+            <div><i data-lucide="clock-3"></i><span>Замовлення до 15:00 привозимо день у день</span></div>
+            <div><i data-lucide="door-open"></i><span>Доставка до дверей у Софіївській Борщагівці та +10 км</span></div>
+            <div><i data-lucide="zap"></i><span>Працюємо навіть при відключенні світла</span></div>
           </div>
         </section>
 
-        <section class="coverage section-panel" id="coverage">
+        <section class="trusted section-panel" aria-label="Нам довіряють">
           <div class="section-heading">
-            <span class="eyebrow">Зона доставки</span>
-            <h2>Софіївська Борщагівка<br />+10 км</h2>
+            <span class="eyebrow">Довіра</span>
+            <h2>Нам довіряють</h2>
           </div>
-          <div class="coverage-map">
-            <div class="map-live-card" aria-label="Карта локації Діамантова вода">
-              <iframe
-                title="Карта: Молодіжна 5, Софіївська Борщагівка"
-                src="https://www.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B0%205%2C%20%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D1%96%D0%B2%D0%BA%D0%B0&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <div class="map-sheen" aria-hidden="true"></div>
-              <div class="map-radius" aria-hidden="true"></div>
-              <div class="map-pin-card">
-                <span><i data-lucide="map-pin"></i></span>
-                <strong>Молодіжна, 5</strong>
-                <small>центр доставки</small>
-              </div>
-              <div class="map-zone-chip zone-main">Софіївська Борщагівка</div>
-              <div class="map-zone-chip zone-radius">+10 км</div>
-              <div class="map-zone-chip zone-fast">день у день</div>
-            </div>
-            <div class="map-copy">
-              <h3>Де ми знаходимось</h3>
-              <p>Київська область, Софіївська Борщагівка, вул. Молодіжна, 5</p>
-              <ul class="map-facts">
-                <li><i data-lucide="route"></i> Софіївська Борщагівка та найближчі ЖК</li>
-                <li><i data-lucide="circle-dot"></i> Додатковий радіус доставки 10 км</li>
-                <li><i data-lucide="clock-3"></i> До 15:00 — доставка день у день</li>
-              </ul>
-              <a
-                class="btn btn-map"
-                href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B0%205%20%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D1%96%D0%B2%D0%BA%D0%B0"
-                target="_blank"
-                rel="noopener"
-              >
-                <i data-lucide="navigation"></i>
-                Відкрити Google Maps
-              </a>
-            </div>
+          <div class="trusted-strip">
+            <span>Дитячі садочки</span>
+            <span>Lviv Croissants</span>
+            <span>Лікарні</span>
+            <span>Малий та великий бізнес</span>
+            <span>Мешканці Софіївської Борщагівки</span>
+          </div>
+        </section>
+
+        <section class="partnership section-panel" aria-label="Пропозиції співпраці">
+          <div>
+            <span class="eyebrow">Сервіс</span>
+            <h2>Залишити пропозицію співпраці</h2>
+            <p>Для закладів, офісів, бізнесу та партнерських пропозицій.</p>
+          </div>
+          <a class="partner-phone" href="tel:+380668106863">
+            <i data-lucide="phone-call"></i>
+            Дмитро: 066 810 68 63
+          </a>
+        </section>
+
+        <section class="certificates section-panel" aria-label="Сертифікати та аналізи">
+          <div class="section-heading">
+            <span class="eyebrow">Документи</span>
+            <h2>Сертифікати та аналізи</h2>
+          </div>
+          <div class="certificate-grid">
+            <div><i data-lucide="file-check-2"></i><span>Сертифікат</span></div>
+            <div><i data-lucide="microscope"></i><span>Аналіз води</span></div>
+            <div><i data-lucide="shield-check"></i><span>ISO 22000</span></div>
+            <div><i data-lucide="file-text"></i><span>Протокол</span></div>
+            <div><i data-lucide="award"></i><span>Дозвіл</span></div>
+            <div><i data-lucide="clipboard-check"></i><span>Контроль якості</span></div>
           </div>
         </section>
 

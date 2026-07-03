@@ -1,8 +1,5 @@
 import * as THREE from "https://unpkg.com/three@0.165.0/build/three.module.js";
 
-const MAP_URL =
-  "https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B0%205%20%D0%A1%D0%BE%D1%84%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%20%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D1%96%D0%B2%D0%BA%D0%B0";
-
 const legalPages = new Set(["privacy", "terms", "contract", "licenses"]);
 const shell = document.querySelector(".site-shell");
 
@@ -32,11 +29,6 @@ function setupNavigation() {
     window.location.hash = "home";
   });
 
-  document.querySelector(".coverage-map")?.addEventListener("click", (event) => {
-    if (event.target.closest("a")) return;
-    window.open(MAP_URL, "_blank", "noopener");
-  });
-
   showRoute();
 }
 
@@ -47,9 +39,11 @@ function setupRevealAnimations() {
       ".section-heading",
       ".benefit-grid article",
       ".timeline article",
-      ".quality-copy",
-      ".quality-list div",
-      ".coverage-map",
+      ".service-hours",
+      ".service-hours-grid div",
+      ".trusted-strip span",
+      ".partnership",
+      ".certificate-grid div",
       ".final-cta",
     ].join(", "),
   );
@@ -165,7 +159,7 @@ function makeLabelTexture() {
 
   ctx.fillStyle = "#0b5ca8";
   ctx.font = "850 42px system-ui, sans-serif";
-  ctx.fillText("18,9 л · питна вода для дому й офісу", 382, 540);
+  ctx.fillText("18,9 л · питна вода для офісу та дому", 382, 540);
 
   ctx.fillStyle = "#18aa83";
   ctx.font = "900 36px system-ui, sans-serif";
@@ -549,9 +543,9 @@ function setupBottleScene() {
     camera.updateProjectionMatrix();
 
     const mobile = width < 680;
-    bottle.scale.setScalar(mobile ? 0.58 : 0.92);
+    bottle.scale.setScalar(mobile ? 0.56 : 0.92);
     bottle.userData.baseY = mobile ? 0.92 : 0.02;
-    bottle.position.set(mobile ? -0.18 : 1.62, bottle.userData.baseY, 0);
+    bottle.position.set(mobile ? 0.94 : 1.62, bottle.userData.baseY, 0);
     bottle.rotation.y = mobile ? -0.03 : -0.16;
     camera.position.z = mobile ? 8.65 : 7.45;
   }
