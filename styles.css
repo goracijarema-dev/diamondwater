@@ -1532,8 +1532,20 @@ select {
 }
 
 @media (max-width: 860px) {
+  .topbar {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
   .top-slogan {
-    display: none;
+    position: static;
+    order: 3;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 7px 10px;
+    font-size: 0.76rem;
+    white-space: normal;
+    transform: none;
   }
 }
 

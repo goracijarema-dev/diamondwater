@@ -1,35 +1,9 @@
 import * as THREE from "https://unpkg.com/three@0.165.0/build/three.module.js";
 
-const legalPages = new Set(["privacy", "terms", "contract", "licenses"]);
-const shell = document.querySelector(".site-shell");
-
 function refreshIcons() {
   if (window.lucide) {
     window.lucide.createIcons();
   }
-}
-
-function showRoute() {
-  const hash = window.location.hash.replace("#", "") || "home";
-  const isLegal = legalPages.has(hash);
-  shell.dataset.view = isLegal ? "legal" : "home";
-
-  document.querySelectorAll("[data-legal-page]").forEach((page) => {
-    page.classList.toggle("is-active", page.dataset.legalPage === hash);
-  });
-
-  if (isLegal) {
-    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
-  }
-}
-
-function setupNavigation() {
-  window.addEventListener("hashchange", showRoute);
-  document.querySelector("[data-back]")?.addEventListener("click", () => {
-    window.location.hash = "home";
-  });
-
-  showRoute();
 }
 
 function setupRevealAnimations() {
@@ -585,7 +559,6 @@ function setupBottleScene() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setupNavigation();
   setupRevealAnimations();
   setupBottleScene();
   refreshIcons();
